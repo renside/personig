@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+          crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+    <title>Sports</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <style>
+       #radamaissaturs {
+            display: none;
+            
+        }
+        
+        #pasleptaissaturs {
+            display: none;
+        }
+    
+        img {
+            width: 270px;
+            height: 270px;
+        }
+    
+        table,
+        th,
+        td {
+            border: 1px solid rgb(12, 95, 54);
+            border-collapse: collapse;
+        }
+    
+        body {
+            background-image: url("https://i.pinimg.com/564x/6e/0e/ae/6e0eae07a5c4e4ef69586c6de238b14c.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: rgba(175, 207, 207, 0.171);
+            height: 270vh;
+            margin: 10px;
+        }
+    
+        .container {
+            background-color: rgba(204, 228, 236, 0.6);
+            border-radius: 70px;
+            padding: 70px;
+        }
+        </style>
+        <script>
+            function raditSaturu() {
+                document.getElementById("radamaissaturs").style.display = "block";
+                document.getElementById("PogaRadit").style.display = "none";
+            }
+            function pasleptSaturu() {
+                document.getElementById("radamaissaturs").style.display = "none";
+                document.getElementById("PogaRadit").style.display = "block";
+            }
+            function mainitVirsrakstu(){
+                const element = document.querySelector(".mazaisVirsraksts")
+
+                if(element.innerHTML === "Nike bumbas"){
+                    return element.innerHTML = "Lieliskās Jordan bumbas"
+                } else {
+                    return element.innerHTML = "Nike bumbas"
+                }
+
+            }
+            function mainitBildi(){
+                const element = document.querySelector(".bilde")
+
+                if(element.getAttribute("src") === "https://i.pinimg.com/564x/78/2e/dc/782edc0420c7bafa1b329e05f47614cc.jpg"){
+                    return element.src = "https://i.pinimg.com/564x/92/04/af/9204af191a2d2eaa3cc1819d69f60a02.jpg"
+                } else {
+                    return element.src = "https://i.pinimg.com/564x/78/2e/dc/782edc0420c7bafa1b329e05f47614cc.jpg"
+                }
+            }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-xxl-3">
+                <img class="bilde" src="https://i.pinimg.com/564x/78/2e/dc/782edc0420c7bafa1b329e05f47614cc.jpg">
+            </div>
+            <div class="col-xl-12 col-xxl-9">
+                <h1>Basketbola bumbas</h1>
+                <h3 class="mazaisVirsraksts">Nike bumbas</h3>
+                <p>Basketbola bumba ir sfēriskas formas bumba, ko izmanto basketbola spēlēs. Basketbola bumbas parasti variē pēc izmēra, sākot no ļoti maziem reklāmas materiāliem, kas ir tikai daži collas (centimetri) diametrā, līdz ļoti lielām bumbām, kas ir gandrīz 2 pēdas (60 cm) diametrā un tiek izmantotas treniņos. Piemēram, jauniešu basketbola bumba var būt 27 collu (69 cm) apkārtmērā, savukārt Nacionālās Koleģiālās Sporta asociācijas (NCAA) vīriešu bumba būtu maksimāli 30 collas (76 cm), un sieviešu bumba būtu maksimāli 29 collas (74 cm). Nacionālās Basketbola asociācijas (NBA) standarts ir 29.5 collas (75 cm), savukārt Sieviešu Nacionālās Basketbola asociācijas (WNBA) maksimālais apkārtmērs ir 29 collas (74 cm). Vidusskolas un jaunatnes līgas parasti izmanto NCAA, NBA vai WNBA izmēra bumbas.</p>
+                <button id="PogaRadit"
+                    onclick="raditSaturu()">Rādīt vairāk</button>
+                <div id="radamaissaturs">
+                    <p>Atšķirībā no laukuma un groziem, basketbola bumba ir vienīgais aprīkojums, kas nepieciešams, lai spēlētu basketbolu. Spēles laikā bumba jālēkā nepārtraukti (driblējot), jāmet gaisā citiem spēlētājiem (pārspējot) vai jāmet pret grozu (metieni). Tāpēc bumbai jābūt ļoti izturīgai un viegli turamai rokās. Bumbu arī izmanto triku veikšanai (dažreiz to sauc par brīvstailingu), no kuriem visbiežāk sastopams ir bumbas griešana uz viena rādītājpirksta galiņa, driblējot sarežģītos rakstos, bumbas ritināšana pār plecu vai izpildot gaisa manevrus ar bumbu, veicot slam dunk, īpaši slam dunk sacensību kontekstā.</p>
+                    <button id="PogaRadit"
+                            onclick="pasleptSaturu()">Rādīt mazāk
+                    </button>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12 col-xxl-8">
+                <p><a href="https://www.nike.com/jordan/basketball">Papildus basketbola spēlēm!</a></p>
+                <table>
+                    <table class="table table-success table-striped">
+                        <thead class="table-dark">
+                        <tr>
+                            <th>Veikals</th>
+                            <th>Cena</th>
+                            <th>Pilsēta</th>
+                            <th>Iela</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th>Sportland</th>
+                            <th>64.99 EUR</th>
+                            <th>Rīga</th>
+                            <th>Lielirbes iela 29</th>
+                        </tr>
+                        <tr>
+                            <th>Decathlon</th>
+                            <th>30.00 EUR</th>
+                            <th>Ulbroka</th>
+                            <th>Biķeru iela 4</th>
+                        </tr>
+                        <tr>
+                            <th>Depo</th>
+                            <th>19.05 EUR</th>
+                            <th>Rīga</th>
+                            <th>Krasta iela 36</th>
+                        </tr>
+                        <tr>
+                            <th>Sports Direct</th>
+                            <th>26.39 EUR</th>
+                            <th>Rīga</th>
+                            <th> Brīvības iela 372</th>
+                        </tr>
+                    </tbody>
+                    </table>
+                <button onclick="mainitBildi()">Mainīt bildi</button>
+                <button onclick="mainitVirsrakstu()">Mainīt virsrakstu</button>
+            </div>
+            <div class="col-xl-12 col-xxl-4">
+                <h2>Bumbu saraksts</h2>
+                <ol>
+                    <li>Nike bumbas</li>
+                    <ul style="list-style-type:disc;">
+                        <li>Baltā krāsā</li>
+                        <li>Oranžā krāsā</li>
+                    </ul>
+                    <li>Sports Direct Bumbas</li>
+                    <li>Depo bumbas</li>
+                    <li>Jordan bumbas</li>
+                    <ul style="list-style-type:disc;">
+                        <li>Melnā krāsā</li>
+                        <li>Brūnā krāsā</li>
+                        <li>Oranžā krāsā</li>
+                    </ul>
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
